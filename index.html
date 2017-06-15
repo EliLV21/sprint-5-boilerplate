@@ -33,17 +33,42 @@
     <section class="row">
       <table class="responsive-table striped">
        <thead>
-         <th>Nombre</th>
-         <th>Tema</th>
-         <th>Respuestas</th>
+         <th class="col s6">Nombre</th>
+         <th class="col s4">Tema</th>
+         <th class="col s2">Respuestas</th>
        </thead>
        <tbody id="tasks-list"></tbody>
      </table>
     </section>
   </section>
 
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="row">
+    <form class="col s12" id="add-form">
+      <div class="row">
+        <div class="input-field col s6">
+          <input type="text" class="validate" id="nombrePersona">
+          <label for="first_name">Nombre</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="mensajeTema" class="materialize-textarea"></textarea>
+          <label for="textarea1">Mensaje</label>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="modal-action modal-close waves-effect btn-flat">Agregar</button>
+    </div>
+  </div>
+  </form>
+
       <!-- jQuery -->		      <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>		      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="js/materialize.min.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
 </body>
 </html>
