@@ -2,19 +2,48 @@
 
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title></title>
+</head>
+<body>
+  <section class="container">
+    <section class="row">
+      <nav class="col s12 teal">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">Opina&Aprende!</a>
+        </div>
+      </nav>
+      <div class="nav-wrapper col s6 left">
+        <form>
+          <div class="input-field">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+      </div>
+      <div class="col s6">
+        <a class="waves-effect btn right lighten-teal" href="#modal1">Agregar Tema</a>
+      </div>
+    </section>
+    <section class="row">
+      <table class="responsive-table striped">
+       <thead>
+         <th>Nombre</th>
+         <th>Tema</th>
+         <th>Respuestas</th>
+       </thead>
+       <tbody id="tasks-list"></tbody>
+     </table>
+    </section>
+  </section>
 
-    <h1>Aqui van todos los temas</h1>
-    
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    
-    <script src="js/functions.js"></script>
-    <script src="js/main.js"></script>
-    
-  </body>
+      <!-- jQuery -->		      <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>		      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="js/materialize.min.js" charset="utf-8"></script>
+</body>
 </html>
